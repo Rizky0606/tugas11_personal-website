@@ -7,7 +7,7 @@ const path = require("path");
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "src/views"));
 
-app.use(express.static("./src/image"));
+app.use(express.static("./src"));
 
 app.use(express.urlencoded({ extended: false }));
 
